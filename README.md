@@ -1,6 +1,7 @@
 # lockdown_impacts_PM2.5
 
 Repository for code and data used in the paper entitled "Differential Impacts of COVID-19 Lockdowns on PM2.5 across the United States".
+The preprint of this paper can be found on [medRxiv](https://www.medrxiv.org/content/10.1101/2021.03.10.21253284v1).
 
 [`data_cleaning.R`](https://github.com/kevinleec/lockdown_impacts_PM2.5/blob/main/data_cleaning.R) contains code for cleaning and preprocessing PM2.5 data as well as meteorological, socioeconomic, demographic, emissions, and mobility data.
 
