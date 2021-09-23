@@ -25,6 +25,8 @@ outs_19 <- vector("list", length = 1700)
 bad_19 <- rep(NA, 1700); k = 1
 outputFile <- file("output4_19.txt", open = "a")
 startTime <- Sys.time()
+
+## redefining treatment period
 som$State.of.emergency[48] <- as.Date("2020-02-28")
 som$State.of.emergency <- som$State.of.emergency - years(1)
 som$Reopen.businesses <- som$Reopen.businesses - years(1)
@@ -84,8 +86,8 @@ for (i in 1:length(monitors)) {
     ATT2_19[i,6] <- as.character(dataSubset[1,]$County.Name)
     ATT2_19[i,7] <- as.character(dataSubset[1,]$Latitude.x)
     ATT2_19[i,8] <- as.character(dataSubset[1,]$Longitude.x)
-    ATT2_19[i,9] <- mean((yravg$Arithmetic.Mean.2019 - yravg$threeyr.avg)^2, na.rm = T) ## !!!
-    ATT2_19[i,10] <- mean((out$Y.tr - out$Y.ct)^2, na.rm = T) ## !!!
+    ATT2_19[i,9] <- mean((yravg$Arithmetic.Mean.2019 - yravg$threeyr.avg)^2, na.rm = T) ## RMSE of simple average
+    ATT2_19[i,10] <- mean((out$Y.tr - out$Y.ct)^2, na.rm = T) ## RMSE of SCM
     ATT2_19[i,11] <- mean(dataSubset[which(dataSubset$Date.Local >= "2019-04-01" & dataSubset$year %in% c(2017,2018,2016)),5])
     outs[[i]] <- out
     
@@ -133,7 +135,7 @@ ATT2_19$Region <- sapply(ATT2_19$State,
 ATT2_19 <- subset(ATT2_19, simple.MSE != 0)
 
 
-### Simple RMSE vs. gsynth RMSE
+### Simple RMSE vs. SCM RMSE
 
 mean(ATT2_19$simple.MSE)
 mean(ATT2_19$gsynth.MSE)
