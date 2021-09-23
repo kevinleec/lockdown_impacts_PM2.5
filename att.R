@@ -9,6 +9,12 @@ lt10_treat <- 0
 data_plots <- list()
 counterfactual_plots <- list()
 
+set.limits = c("tr","ct")
+set.labels = c("Observed", "Counterfactual")
+set.colors = c("black","steelblue")
+set.linetypes = c("solid","longdash")
+set.linewidth = rep(0.5,2)
+
 ########################################
 ## Calculate ATTs
 ########################################
@@ -71,8 +77,20 @@ for (i in 1:length(monitors)) {
     data_plots[[i]] <- plot(out, type = "missing", theme.bw = TRUE,
                             main = paste(ATT2[i,5]),)
     counterfactual_plots[[i]] <- plot(out, type = "counterfactual", theme.bw = TRUE,
-                                      main = paste(ATT2[i,5]))
-  }, error = function(e) {
+                                      main = paste(ATT2[i,5])) + 
+      scale_color_manual(limits = set.limits, 
+                          labels = set.labels,
+                          values =set.colors) +
+      scale_linetype_manual(limits = set.limits,
+                            labels = set.labels,
+                            values = set.linetypes) +
+      scale_size_manual(limits = set.limits,
+                        labels = set.labels,
+                        values = set.linewidth) +
+      guides(linetype = guide_legend(title=NULL, ncol=2),
+             colour = guide_legend(title=NULL, ncol=2),
+             size = guide_legend(title=NULL, ncol=2))
+    }, error = function(e) {
     writeLines(paste0("at index ", i, " occurred following error ", as.character(e) ), 
                outputFile); bad[k] = i; k=k+1;
   })
