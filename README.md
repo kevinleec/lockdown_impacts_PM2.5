@@ -11,3 +11,4 @@ The preprint of this paper can be found on [medRxiv](https://www.medrxiv.org/con
 
 [`health_impacts.R`](https://github.com/kevinleec/lockdown_impacts_PM2.5/blob/main/health_impacts.R) contains code for estimating the effects of PM<sub>2.5</sub> changes on respiratory and cardiovascular hospitalizations.
 
+[`prediction_accuracy.R`]() contains code for evaluating the predictive accuracy of SCM as compared to a 3-year simple average.
