@@ -1,7 +1,7 @@
 # lockdown_impacts_PM2.5
 
-Repository for code and data used in the paper entitled "Differential Impacts of COVID-19 Lockdowns on PM<sub>2.5</sub> across the United States".
-The preprint of this paper can be found on [medRxiv](https://www.medrxiv.org/content/10.1101/2021.03.10.21253284v1).
+Repository for code and data used in the paper entitled "Differential impacts of COVID-19 lockdowns on PM<sub>2.5</sub> across the United States", authored by Kevin L. Chen, Lucas R.F. Henneman, and Rachel C. Nethery. 
+The open access version of this paper, published in Environmental Advances, can be found [here](https://www.sciencedirect.com/science/article/pii/S2666765721000934).
 
 [`data_cleaning.R`](https://github.com/kevinleec/lockdown_impacts_PM2.5/blob/main/data_cleaning.R) contains code for cleaning and preprocessing PM<sub>2.5</sub> data as well as meteorological, socioeconomic, demographic, emissions, and mobility data.
 
