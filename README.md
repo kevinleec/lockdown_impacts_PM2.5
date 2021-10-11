@@ -5,11 +5,7 @@ Repository for code and data used in the paper entitled "Differential impacts of
 
 The open access version of this paper published in Environmental Advances can be found [here](https://www.sciencedirect.com/science/article/pii/S2666765721000934).
 
-
 ***
-
-
-
 [`data_cleaning.R`](https://github.com/kevinleec/lockdown_impacts_PM2.5/blob/main/data_cleaning.R) contains code for cleaning and preprocessing PM<sub>2.5</sub> data as well as meteorological, socioeconomic, demographic, emissions, and mobility data.
 
 [`att.R`](https://github.com/kevinleec/lockdown_impacts_PM2.5/blob/main/att.R) contains code for estimating counterfactual PM<sub>2.5</sub> concentrations during the lockdown period, as well as creating point-level and IDW-smoothed maps. Also contains sensitivity analyses for ATT estimation.
