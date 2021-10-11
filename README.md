@@ -1,4 +1,5 @@
-# lockdown_impacts_PM2.5
+# Differential impacts of COVID-19 lockdown on PM<sub>2.5</sub> across the United States
+### Kevin L. Chen, Lucas R.F. Henneman, and Rachel C. Nethery
 
 Repository for code and data used in the paper entitled "Differential impacts of COVID-19 lockdowns on PM<sub>2.5</sub> across the United States", authored by Kevin L. Chen, Lucas R.F. Henneman, and Rachel C. Nethery. 
 The open access version of this paper published in Environmental Advances can be found [here](https://www.sciencedirect.com/science/article/pii/S2666765721000934).
