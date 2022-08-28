@@ -17,3 +17,8 @@ The open access version of this paper published in Environmental Advances can be
 [`prediction_accuracy.R`](https://github.com/kevinleec/lockdown_impacts_PM2.5/blob/main/prediction_accuracy.R) contains code for evaluating the predictive accuracy of SCM as compared to a 3-year simple average.
 
 ***
+
+## Citation
+
+Chen, K.L., Henneman, L.R.F., & Nethery, R.C. (2021). Differential impacts of COVID-19 lockdowns on PM2.5 across the United States. Environmental Advances 6: 100122. https://doi.org/10.1016/j.envadv.2021.100122
+
